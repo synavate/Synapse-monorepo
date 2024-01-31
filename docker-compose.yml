@@ -1,0 +1,23 @@
+# Template 
+version: '3.10'
+services:
+  backend:
+    build: ./path/to/python/backend
+    ports:
+      - "8000:8000"
+    environment:
+      - NAME=World
+    volumes:
+      - ./path/to/python/backend:/app
+    command: python app.py
+
+  frontend:
+    build: ./path/to/react/frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./path/to/react/frontend:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm start

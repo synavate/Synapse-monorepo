@@ -1,0 +1,26 @@
+name: DataDog Static Analysis
+run-name: ${{ github.actor }} is testing GitHub Actions and Static Analysis 🚀
+on:
+  push:
+    branches: 
+      - trescommas
+jobs:
+
+  check-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Action for pylint
+        uses: cclauss/GitHub-Action-for-pylint@0.7.0
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check code meets quality standards
+        id: datadog-static-analysis
+        uses: DataDog/datadog-static-analyzer-github-action@v1
+        with:
+          dd_app_key: ${{ secrets.DD_APP_KEY }}
+          dd_api_key: ${{ secrets.DD_API_KEY }}
+          dd_service: "synapse-v0.0.1"
+          dd_env: "ci"
+          cpu_count: 2
+          enable_performance_statistics: false
+ 
