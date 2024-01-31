@@ -1,5 +1,7 @@
 # Synapse v0.0.2 ~ 31/01/2024
 
+## 31/12/2024 - README OUT OF DATE - TO BE UPDATED
+
 [![.github/workflows/trescommas-push.yml](https://github.com/synavate/Synapse-v0.0.1-POC/actions/workflows/trescommas-push.yml/badge.svg?branch=trescommas&event=status)](https://github.com/synavate/Synapse-v0.0.1-POC/actions/workflows/trescommas-push.yml)
 
 Structure:
