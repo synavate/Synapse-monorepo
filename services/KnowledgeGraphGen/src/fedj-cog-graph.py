@@ -5,7 +5,6 @@ import time
 from pyconfig import EnvVAR
 
 from dotenv import load_dotenv
-import cogdb
 from cogdb import Graph
 
 

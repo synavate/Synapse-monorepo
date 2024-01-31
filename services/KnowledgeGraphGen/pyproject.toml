@@ -11,6 +11,7 @@ python = "^3.9"
 kgcreator = "^0.21"
 spacy = "^3.7.2"
 python-dotenv = "^1.0.1"
+cogdb = "^3.0.7"
 
 
 [build-system]
