@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kggen"
+version = "0.1.0"
+description = "Knowledge Graph Generator"
+authors = ["snyata <core@synavate.tech>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+kgcreator = "^0.21"
+spacy = "^3.7.2"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
