@@ -1,30 +1,48 @@
 # Synapse v0.0.2 ~ 31/01/2024
 
-[![.github/workflows/trescommas-push.yml](https://github.com/synavate/Synapse-v0.0.2-POC/actions/workflows/trescommas-push.yml/badge.svg?branch=trescommas&event=status)](https://github.com/synavate/Synapse-v0.0.2-POC/actions/workflows/trescommas-push.yml)
+[![Static Analysis Status Badge](https://github.com/synavate/Synapse-v0.0.2-POC/actions/workflows/trescommas-push.yml/badge.svg?branch=trescommas&event=status)]
 
-### Structure:
-    
-    Backend/
-    Infrastructure Backbone (Cerebrum) - GCP for Phase 1 POC
-    Data Service (Brainstem) - Phase 2
-    Intelligence Service (ML/Analysis) (Cortex) - Basic RAG with Vector Storage
-    Reporting Service/Observability (VagalNerve): ELK Stack
-    
-    Frontend/
-    UserAccountPipeline - Secure Account Storage.
-    UserDashboardUI (MotorNeuron) - NextJS Front end
+# v0.02 Architecture Summary
 
-### Testing:
+`
+### CORE OPERATIONS: Kong and Extensions
 
-Backend: pyTest
-Frontend: Jest
+- **APIGatewayService**: Entry point for the application, routing requests to other services using Kong,and Kubernetes for scaling.
 
-    
-    
-    
-    
-    
-    Shenanigans Service (Humerus - oh wait, not in the brain) - Always
+### Backend Service Libraries
+- **Backend Logic & Testing**: Python, Poetry, PyEnv, pyTest.
+- **ML Model Libraries**: Scikitlearn, pyG, PyTorch.
+- **MLOps**: WandB, MLFlow, Live Monitoring TBC, Python Scripting for retraining.
+- **LLM Orchestration**: LLamaIndex & Langchain.
+- **LLMOps**: Humanloop, CI LLM Evals.
+- **Application Server**: FastAPI > API Gateway.
+
+### Backend DB and Caching
+- **Databases**: MongoDB (Testing), REDIS, QDrant, Memgraph, Neo4J (TBD).
+
+### Frontend UserUI & Data Viz
+- **User Account & Security**: Investigating Verida, Spruce; secure data storage.
+- **User UI**: NextJS with Typescript.
+- **Data Visualization**: D3 with Memgraph Orb (Custom CSS).
+- **Application Server**: Express Based TS API.
+
+### Key Services
+- **KnowledgeGraphGen**: Manages knowledge graph generation/management.
+- **MLInferenceService**: Provides machine learning model inferences.
+- **LLMProcessingService**: Processes tasks for Large Language Models.
+- **BusinessLobsterService**: Generates business-related reports.
+- **DataProcessingService**: Handles data preprocessing.
+- **DataPipelineService**: Manages data storage solutions.
+
+### Frontend Technologies
+- **UserAccountService**: Manages user accounts and authentication.
+- **UserDashboard**: Built using Next.js; user interface for system interaction.
+- **DataVizService**: Creates visual representations of data.
+  
+### Shenanigans Service (Humerus - oh wait, not in the brain) - Always
+
+### Deployment
+- **Google Cloud Platform:** Run, Build, Deploy, Storage (Exhaustive list TBC by @Audiato)
 
 
 - The synavate core has a tonne developing in our key relationships and preparing our codebase.
@@ -45,4 +63,5 @@ Goal: A minimal execution demonstrating the vision of Synapse as our initial pro
 
 Details as the project evolves closer to it's goal.
 
+----------------------
 **core@synapse.tech or ask to join our Slack.**

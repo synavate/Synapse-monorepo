@@ -4,7 +4,7 @@ import { EnvironmentType } from '@verida/types'
 import { WebUser } from '@verida/web-helpers'
 
 // Your application context name
-const CONTEXT_NAME = 'Synavate: LatentSpace-Vault'
+const CONTEXT_NAME = 'Synavate: Synpase'
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 
 // Your logo URL (appears in the Wallet)
@@ -59,10 +59,12 @@ console.log(`Public profile:`, publicProfile)
 // Send a message from the connected user to the specified DID (in this example to itself)
 await user.sendMessage(did, 'Hello!')
 
+// TODO ESTABLISH DATASTORE or Database 01/02/2024
 // Open a private encrypted user database and save a row
 const database = await user.openDatabase('test_db')
 const row = await database.save({'hello': 'world'})
 console.log(row)
+
 
 // Open a private encrypted user datastore and save a row
 const datastore = await user.openDatastore('https://common.schemas.verida.io/social/contact/v0.1.0/schema.json')
