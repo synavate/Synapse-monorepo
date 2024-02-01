@@ -1,10 +1,13 @@
-Certainly! Here's a succinct user guide for using `dotenv-vault` to access an organization account, assuming the user has already been invited to the organization. The guide is written in Markdown format:
+# How to use dotenv-vault for enviornment variables
+Using `dotenv-vault` to access an organization account, assuming you have already been invited to Synavate. 
+
+If not, contact: `core@synavate.tech`
 
 ---
 
 # Accessing Organization Account with dotenv-vault
 
-Follow these steps to access the organization account using `dotenv-vault`. Ensure you have already been invited to the organization account.
+Follow these steps to access the organization account using `dotenv-vault`. Ensure you have already been invited to the Synavate account.
 
 ## Step 1: Install dotenv-vault
 
