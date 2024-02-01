@@ -2,13 +2,28 @@
 
 [![.github/workflows/trescommas-push.yml](https://github.com/synavate/Synapse-v0.0.2-POC/actions/workflows/trescommas-push.yml/badge.svg?branch=trescommas&event=status)](https://github.com/synavate/Synapse-v0.0.2-POC/actions/workflows/trescommas-push.yml)
 
-Structure:
-
+### Structure:
+    
+    Backend/
     Infrastructure Backbone (Cerebrum) - GCP for Phase 1 POC
-    User Service (Optic-Nerve) - Phase 2
     Data Service (Brainstem) - Phase 2
-    Intelligence Service (ML/Analysis) (Cortex) - Basic RAG with REDIS storage
-    Reporting Service (Build-Measure-Learn) (VagalNerve) - Phase 2
+    Intelligence Service (ML/Analysis) (Cortex) - Basic RAG with Vector Storage
+    Reporting Service/Observability (VagalNerve): ELK Stack
+    
+    Frontend/
+    UserAccountPipeline - Secure Account Storage.
+    UserDashboardUI (MotorNeuron) - NextJS Front end
+
+### Testing:
+
+Backend: pyTest
+Frontend: Jest
+
+    
+    
+    
+    
+    
     Shenanigans Service (Humerus - oh wait, not in the brain) - Always
 
 
