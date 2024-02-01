@@ -4,7 +4,6 @@ import json
 import time
 from pyconfig import EnvVAR
 
-from dotenv import load_dotenv
 from cogdb import Graph
 
 

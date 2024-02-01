@@ -3,3 +3,5 @@ frontend/.next
 node_modules/
 env/
 vault/
+.gitignore
+

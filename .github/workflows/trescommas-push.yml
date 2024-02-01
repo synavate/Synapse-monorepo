@@ -19,8 +19,9 @@ jobs:
         with:
           dd_app_key: ${{ secrets.DD_APP_KEY }}
           dd_api_key: ${{ secrets.DD_API_KEY }}
-          dd_service: "synapse-v0.0.1"
+          dd_service: "synapse-v0.0.2"
           dd_env: "ci"
           cpu_count: 2
           enable_performance_statistics: false
+          subdirectory: ./backend/
  
