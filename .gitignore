@@ -4,4 +4,12 @@ node_modules/
 env/
 vault/
 .gitignore
+*.vault
+.env.me
+ENV/
 
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault

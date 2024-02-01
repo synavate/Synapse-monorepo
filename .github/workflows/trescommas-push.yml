@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing GitHub Actions and Static Analysis 🚀
 on:
   push:
     branches: 
-      - trescommas
+      - develop
 jobs:
 
   check-quality:
