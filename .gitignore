@@ -1,16 +1,20 @@
-.env
-frontend/.next
-node_modules/
-env/
-vault/
-.gitignore
+#######################CRITICAL DO NOT REMOVE#############
 *.vault
 .env.me
 ENV/
-docs/
-
-
+.env
+env/
+vault/
 .env*
 .flaskenv*
 !.env.project
 !.env.vault
+#######################CRITICAL DO NOT REMOVE ############
+
+#FrontENd
+frontend/.next
+node_modules/
+
+.gitignore
+
+docs/
