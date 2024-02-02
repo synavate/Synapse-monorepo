@@ -1,0 +1,58 @@
+{
+  "name": "synapse",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/synapse/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/synapse",
+        "main": "apps/synapse/src/main.ts",
+        "tsConfig": "apps/synapse/tsconfig.app.json",
+        "assets": [
+          "apps/synapse/src/assets"
+        ],
+        "webpackConfig": "apps/synapse/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "synapse:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "synapse:build:development"
+        },
+        "production": {
+          "buildTarget": "synapse:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "apps/synapse/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}
