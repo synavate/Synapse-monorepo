@@ -7,7 +7,7 @@ The services specified in the script for the `synapse` project include a mix of 
 
 1. **APIGatewayService**: Acts as the entry point for the application, routing requests to other services.
    1. Using SwaggerAPI and OpenAPI standard to generate schema.
-   2. Kong to implement endpoints.
+   2. Kafka Event Streaming and Queing.
    3. Incorporating K8's for scaling as we head toward a stable release.
 
 -----------------
@@ -19,6 +19,8 @@ The services specified in the script for the `synapse` project include a mix of 
 **MLOps:** WandB, MLFlow, Live Monitoring TBC, Python Scripting for retraining.
 **LLM Orchestration:** LLamaIndex & Langchain.
 **LLMOps:** Humanloop, CI LLM Evals
+
+**Application server:** FastAPI based implementation > API Gateway
 
 -----------------
 
@@ -36,6 +38,8 @@ The services specified in the script for the `synapse` project include a mix of 
 **User Account Service & Vault:** Investigating Verida at the moment or Spruce, or alternative. Strip all PII or IP from data and store securely.
 **User UI:** NextJS Framework using Typescript for type safety.
 **Data Viz:** D3 Data Visualization with Memgraph Orb (Custom CSS)
+
+**Application Server:** Express Based TS API
 
 1. **KnowledgeGraphGen**: Open Research Problem: Probably handles the generation or management of a knowledge graph, which could involve processing and organizing information into a network of entities and their interrelations. ✅
 
