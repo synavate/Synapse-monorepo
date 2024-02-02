@@ -1,4 +1,0 @@
-# SynAPIGateway
-
-- Kong Based
-- 
