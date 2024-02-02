@@ -20,6 +20,8 @@ The services specified in the script for the `synapse` project include a mix of 
 **LLM Orchestration:** LLamaIndex & Langchain.
 **LLMOps:** Humanloop, CI LLM Evals
 
+**Application server:** FastAPI based implementation > API Gateway
+
 -----------------
 
 ## Backend DB and Caching
@@ -36,6 +38,8 @@ The services specified in the script for the `synapse` project include a mix of 
 **User Account Service & Vault:** Investigating Verida at the moment or Spruce, or alternative. Strip all PII or IP from data and store securely.
 **User UI:** NextJS Framework using Typescript for type safety.
 **Data Viz:** D3 Data Visualization with Memgraph Orb (Custom CSS)
+
+**Application Server:** Express Based TS API
 
 1. **KnowledgeGraphGen**: Open Research Problem: Probably handles the generation or management of a knowledge graph, which could involve processing and organizing information into a network of entities and their interrelations. ✅
 

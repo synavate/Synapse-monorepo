@@ -5,6 +5,8 @@ import initalizeBackend;
 
 const baseUrl = 'http://127.0.0.1:3042/api/v1';
 
+
+//Assuming an MVC Design Pattern @TODO Alex - Determine with FE Dev & Compatbility with Kong API Gateway
 // Models
 
 
@@ -13,9 +15,7 @@ const baseUrl = 'http://127.0.0.1:3042/api/v1';
 // Controllers
 
 
-
-
-
+// Views 
 const initializeBackend = async (req: Request, res: Response) => {
     try {
         const { user, pass, DiD } = req.body as UserGraph;
@@ -27,17 +27,13 @@ const initializeBackend = async (req: Request, res: Response) => {
         res.status(500).send(error.message);
     }
 };
-
-
-
-
-
+ 
 // Routes
 
 function Routes() {
     const router = express.Router();
 
-// Adjust the route as well if you feel necessary. Here, it's kept as '/initialize' for simplicity.
+// This should use a callback to initialize the backend processes for the user. Depending on the workflow.
     router.post('/synaptualize', initializeBackend);
 
 }

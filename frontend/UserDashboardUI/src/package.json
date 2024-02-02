@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/synavate/Synapse-v0.0.1-POC.git"
+    "url": "git+https://github.com/synavate/Synapse-v0.0.2 -POC.git"
   },
   "keywords": [
     "Synapse",
@@ -20,9 +20,9 @@
   "author": "Snyata",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/synavate/Synapse-v0.0.1-POC/issues"
+    "url": "https://github.com/synavate/Synapse-v0.0.2 -POC/issues"
   },
-  "homepage": "https://github.com/synavate/Synapse-v0.0.1-POC#readme",
+  "homepage": "https://github.com/synavate/Synapse-v0.0.2-POC#readme",
 "private": true,
 "scripts": {
   "dev": "next dev --turbo",

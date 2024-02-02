@@ -1,7 +1,7 @@
 ```
 # 🎉 Welcome to the Synavate Team! 🌟
 
-## Greetings, Full Stack Web Developer! 👩‍💻👨‍💻
+## Greetings, Full Derrick! 👩‍💻👨‍💻
 
 We are absolutely thrilled to have you join us on the Synavate project! As a Full Stack Web Developer, your contribution will be key to driving our project forward. Here’s a snapshot of the tech stack you’ll be engaging with:
 
@@ -9,7 +9,7 @@ We are absolutely thrilled to have you join us on the Synavate project! As a Ful
 - 🌐 **Frontend**: NextJS, TypeScript
 - 🔧 **Backend**: FastAPI, Python
 - 💾 **Databases**: MongoDB, Redis, QDrant
-- 🤖 **Data Processing and ML**: PyTorch, MLFlow, WandB
+- 🤖 **Data Processing and ML**: PyTorch, MLFlow, WandB, HumanLoop
 - 🚀 **DevOps and Orchestration**: Docker, Kubernetes, GitLab/GitHub Actions
 - 🔀 **Version Control**: Git, GitHub
 ```

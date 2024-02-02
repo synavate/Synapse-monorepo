@@ -1,8 +1,8 @@
 #######################CRITICAL DO NOT REMOVE#############
 *.vault
 .env.me
-ENV/
 .env
+ENV/
 env/
 vault/
 .env*
