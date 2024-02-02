@@ -1,7 +1,7 @@
 ```
 # 🎉 Welcome to the Synavate Team! 🌟
 
-## Greetings, Full Derrick! 👩‍💻👨‍💻
+## Greetings, Derrick! 👩‍💻👨‍💻
 
 We are absolutely thrilled to have you join us on the Synavate project! As a Full Stack Web Developer, your contribution will be key to driving our project forward. Here’s a snapshot of the tech stack you’ll be engaging with:
 

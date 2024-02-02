@@ -7,7 +7,7 @@ The services specified in the script for the `synapse` project include a mix of 
 
 1. **APIGatewayService**: Acts as the entry point for the application, routing requests to other services.
    1. Using SwaggerAPI and OpenAPI standard to generate schema.
-   2. Kong to implement endpoints.
+   2. Kafka Event Streaming and Queing.
    3. Incorporating K8's for scaling as we head toward a stable release.
 
 -----------------
