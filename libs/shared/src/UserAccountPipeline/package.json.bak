@@ -1,0 +1,16 @@
+{
+  "name": "synapse-veridasdk",
+  "version": "1.0.0",
+  "description": "Synapse user backend vault service",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "verida",
+    "did",
+    "privacy"
+  ],
+  "author": "snyata <core@synavate.tech>",
+  "license": "ISC"
+}
