@@ -1,4 +1,11 @@
 # User Dashboard UI
+Versions
+Next.js 14.1.0
+Node 20.11.0
+npm 10.2.4
+Check node_modules for the scripts to be executed
+Check VSCode extensions
+
 
 - NextJS Based Template Pending Featured UI with stable deployment by v0.1.0
 - Currently configured for Github Login
