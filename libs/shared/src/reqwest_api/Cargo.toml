@@ -1,6 +1,8 @@
 [workspace]
+workspace = true
+resolver = "2"
 
 members = [
-    "reqwest_client",
-    "reqwest_server",
+    "reqwest_server/",
+    "reqwest_client/",  
 ]
