@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "reqwest_client",
+    "reqwest_server",
+]
