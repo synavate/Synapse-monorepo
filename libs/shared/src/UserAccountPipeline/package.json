@@ -1,9 +1,11 @@
 {
   "engines": {
-    "node": "14.17.1"
+    "node": "14.17.1",
+    "npm": "6.x.x"
   },
   "dependencies": {
     "@verida/account-web-vault": "^3.0.1",
-    "@verida/client-ts": "^3.0.2"
+    "@verida/client-ts": "^3.0.2",
+    "npm": "6"
   }
 }
