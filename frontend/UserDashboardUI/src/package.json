@@ -4,11 +4,6 @@
   "version": "1.0.0",
   "description": "Front end of Synapse",
   "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "dev": "npm run dev",
-    "build": "npm run build"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/synavate/Synapse-v0.0.2 -POC.git"

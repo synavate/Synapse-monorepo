@@ -69,4 +69,5 @@ dotenv-vault logout
 ---
 
  -  .vault files are OK to commit to Source control
--  NEVER COMMMIT YOUR .env files to Source Control eg. Git
+ -  NEVER COMMIT YOUR .env.me to Git
+-  NEVER COMMMIT YOUR .env files to Git
