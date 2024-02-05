@@ -1,0 +1,558 @@
+{
+    "nodes": [
+        {
+            "id": "Mindfulness",
+            "type": "subtopic"
+        },
+        {
+            "id": "Meditation",
+            "type": "topic"
+        },
+        {
+            "id": "Mindfulness Meditation",
+            "type": "subtopic"
+        },
+        {
+            "id": "Transcendental Meditation",
+            "type": "subtopic"
+        },
+        {
+            "id": "Guided Meditation",
+            "type": "subtopic"
+        },
+        {
+            "id": "Stress Reduction",
+            "type": "topic"
+        },
+        {
+            "id": "Exercise",
+            "type": "topic"
+        },
+        {
+            "id": "Relaxation Techniques",
+            "type": "subtopic"
+        },
+        {
+            "id": "Time Management",
+            "type": "subtopic"
+        },
+        {
+            "id": "Yoga",
+            "type": "topic"
+        },
+        {
+            "id": "Hatha Yoga",
+            "type": "subtopic"
+        },
+        {
+            "id": "Vinyasa Yoga",
+            "type": "subtopic"
+        },
+        {
+            "id": "Kundalini Yoga",
+            "type": "subtopic"
+        },
+        {
+            "id": "Personal Growth",
+            "type": "super_topic"
+        },
+        {
+            "id": "Goal Setting",
+            "type": "topic"
+        },
+        {
+            "id": "SMART Goals",
+            "type": "subtopic"
+        },
+        {
+            "id": "Long-term Goals",
+            "type": "subtopic"
+        },
+        {
+            "id": "Personal Milestones",
+            "type": "subtopic"
+        },
+        {
+            "id": "Skill Development",
+            "type": "topic"
+        },
+        {
+            "id": "Online Courses",
+            "type": "subtopic"
+        },
+        {
+            "id": "Workshops",
+            "type": "subtopic"
+        },
+        {
+            "id": "Self-Taught Learning",
+            "type": "subtopic"
+        },
+        {
+            "id": "Self Improvement",
+            "type": "topic"
+        },
+        {
+            "id": "Reading",
+            "type": "subtopic"
+        },
+        {
+            "id": "Podcasts",
+            "type": "subtopic"
+        },
+        {
+            "id": "Mentorship",
+            "type": "subtopic"
+        },
+        {
+            "id": "Health & Wellness",
+            "type": "super_topic"
+        },
+        {
+            "id": "Nutrition",
+            "type": "topic"
+        },
+        {
+            "id": "Healthy Eating",
+            "type": "subtopic"
+        },
+        {
+            "id": "Diet Planning",
+            "type": "subtopic"
+        },
+        {
+            "id": "Supplements",
+            "type": "subtopic"
+        },
+        {
+            "id": "Cardio",
+            "type": "subtopic"
+        },
+        {
+            "id": "Strength Training",
+            "type": "subtopic"
+        },
+        {
+            "id": "Flexibility Exercises",
+            "type": "subtopic"
+        },
+        {
+            "id": "Mental Health",
+            "type": "topic"
+        },
+        {
+            "id": "Therapy",
+            "type": "subtopic"
+        },
+        {
+            "id": "Stress Management",
+            "type": "subtopic"
+        },
+        {
+            "id": "Technology",
+            "type": "super_topic"
+        },
+        {
+            "id": "Artificial Intelligence",
+            "type": "topic"
+        },
+        {
+            "id": "Machine Learning",
+            "type": "subtopic"
+        },
+        {
+            "id": "Neural Networks",
+            "type": "subtopic"
+        },
+        {
+            "id": "Robotics",
+            "type": "subtopic"
+        },
+        {
+            "id": "Cybersecurity",
+            "type": "topic"
+        },
+        {
+            "id": "Network Security",
+            "type": "subtopic"
+        },
+        {
+            "id": "Encryption",
+            "type": "subtopic"
+        },
+        {
+            "id": "Ethical Hacking",
+            "type": "subtopic"
+        },
+        {
+            "id": "Data Science",
+            "type": "topic"
+        },
+        {
+            "id": "Big Data",
+            "type": "subtopic"
+        },
+        {
+            "id": "Data Analysis",
+            "type": "subtopic"
+        },
+        {
+            "id": "Data Visualization",
+            "type": "subtopic"
+        },
+        {
+            "id": "Environment",
+            "type": "super_topic"
+        },
+        {
+            "id": "Sustainability",
+            "type": "topic"
+        },
+        {
+            "id": "Recycling",
+            "type": "subtopic"
+        },
+        {
+            "id": "Eco-Friendly Practices",
+            "type": "subtopic"
+        },
+        {
+            "id": "Sustainable Living",
+            "type": "subtopic"
+        },
+        {
+            "id": "Conservation",
+            "type": "topic"
+        },
+        {
+            "id": "Wildlife Protection",
+            "type": "subtopic"
+        },
+        {
+            "id": "Habitat Preservation",
+            "type": "subtopic"
+        },
+        {
+            "id": "Water Conservation",
+            "type": "subtopic"
+        },
+        {
+            "id": "Renewable Energy",
+            "type": "topic"
+        },
+        {
+            "id": "Solar Energy",
+            "type": "subtopic"
+        },
+        {
+            "id": "Wind Energy",
+            "type": "subtopic"
+        },
+        {
+            "id": "Hydropower",
+            "type": "subtopic"
+        }
+    ],
+    "relationships": [
+        {
+            "FROM": "Mindfulness",
+            "to": "Meditation",
+            "type": "includes"
+        },
+        {
+            "FROM": "Meditation",
+            "to": "Mindfulness Meditation",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Meditation",
+            "to": "Transcendental Meditation",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Meditation",
+            "to": "Guided Meditation",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Mindfulness",
+            "to": "Stress Reduction",
+            "type": "includes"
+        },
+        {
+            "FROM": "Stress Reduction",
+            "to": "Exercise",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Stress Reduction",
+            "to": "Relaxation Techniques",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Stress Reduction",
+            "to": "Time Management",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Mindfulness",
+            "to": "Yoga",
+            "type": "includes"
+        },
+        {
+            "FROM": "Yoga",
+            "to": "Hatha Yoga",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Yoga",
+            "to": "Vinyasa Yoga",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Yoga",
+            "to": "Kundalini Yoga",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Personal Growth",
+            "to": "Goal Setting",
+            "type": "includes"
+        },
+        {
+            "FROM": "Goal Setting",
+            "to": "SMART Goals",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Goal Setting",
+            "to": "Long-term Goals",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Goal Setting",
+            "to": "Personal Milestones",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Personal Growth",
+            "to": "Skill Development",
+            "type": "includes"
+        },
+        {
+            "FROM": "Skill Development",
+            "to": "Online Courses",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Skill Development",
+            "to": "Workshops",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Skill Development",
+            "to": "Self-Taught Learning",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Personal Growth",
+            "to": "Self Improvement",
+            "type": "includes"
+        },
+        {
+            "FROM": "Self Improvement",
+            "to": "Reading",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Self Improvement",
+            "to": "Podcasts",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Self Improvement",
+            "to": "Mentorship",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Health & Wellness",
+            "to": "Nutrition",
+            "type": "includes"
+        },
+        {
+            "FROM": "Nutrition",
+            "to": "Healthy Eating",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Nutrition",
+            "to": "Diet Planning",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Nutrition",
+            "to": "Supplements",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Health & Wellness",
+            "to": "Exercise",
+            "type": "includes"
+        },
+        {
+            "FROM": "Exercise",
+            "to": "Cardio",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Exercise",
+            "to": "Strength Training",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Exercise",
+            "to": "Flexibility Exercises",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Health & Wellness",
+            "to": "Mental Health",
+            "type": "includes"
+        },
+        {
+            "FROM": "Mental Health",
+            "to": "Therapy",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Mental Health",
+            "to": "Mindfulness",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Mental Health",
+            "to": "Stress Management",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Technology",
+            "to": "Artificial Intelligence",
+            "type": "includes"
+        },
+        {
+            "FROM": "Artificial Intelligence",
+            "to": "Machine Learning",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Artificial Intelligence",
+            "to": "Neural Networks",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Artificial Intelligence",
+            "to": "Robotics",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Technology",
+            "to": "Cybersecurity",
+            "type": "includes"
+        },
+        {
+            "FROM": "Cybersecurity",
+            "to": "Network Security",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Cybersecurity",
+            "to": "Encryption",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Cybersecurity",
+            "to": "Ethical Hacking",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Technology",
+            "to": "Data Science",
+            "type": "includes"
+        },
+        {
+            "FROM": "Data Science",
+            "to": "Big Data",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Data Science",
+            "to": "Data Analysis",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Data Science",
+            "to": "Data Visualization",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Environment",
+            "to": "Sustainability",
+            "type": "includes"
+        },
+        {
+            "FROM": "Sustainability",
+            "to": "Recycling",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Sustainability",
+            "to": "Eco-Friendly Practices",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Sustainability",
+            "to": "Sustainable Living",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Environment",
+            "to": "Conservation",
+            "type": "includes"
+        },
+        {
+            "FROM": "Conservation",
+            "to": "Wildlife Protection",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Conservation",
+            "to": "Habitat Preservation",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Conservation",
+            "to": "Water Conservation",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Environment",
+            "to": "Renewable Energy",
+            "type": "includes"
+        },
+        {
+            "FROM": "Renewable Energy",
+            "to": "Solar Energy",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Renewable Energy",
+            "to": "Wind Energy",
+            "type": "encompasses"
+        },
+        {
+            "FROM": "Renewable Energy",
+            "to": "Hydropower",
+            "type": "encompasses"
+        }
+    ]
+}
