@@ -4,7 +4,6 @@
 
 # v0.02 Architecture Summary
 
-`
 ### CORE OPERATIONS: Kong and Extensions
 
 - **APIGatewayService**: Entry point for the application, routing requests to other services using Kong,and Kubernetes for scaling.
