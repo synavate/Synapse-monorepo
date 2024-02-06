@@ -6,7 +6,7 @@
 
 ### CORE OPERATIONS: Kong and Extensions
 
-- **APIGatewayService**: Entry point for the application, routing requests to other services using Kong,and Kubernetes for scaling.
+- **APIGatewayService**: Entry point for the application, routing requests to other services using NesJS Microservice API Gateway pending Kong, and Kubernetes for scaling.
 
 ### Backend Service Libraries
 - **Backend Logic & Testing**: Python, Poetry, PyEnv, pyTest.
