@@ -17,11 +17,6 @@ pipeline = IngestionPipeline(
 nodes = pipeline.run(documents=[Document.example()])
 
 
-embed_model = OpenAIEmbedding()
-service_context = ServiceContext.from_defaults(embed_model=embed_model)
-
-# optionally set a global service context
-set_global_service_context(service_context)
 
 # We break apart our input text into chunks
 embeddings = embed_model.get_text_embedding(

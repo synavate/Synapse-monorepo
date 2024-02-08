@@ -1,5 +1,4 @@
 node_modules/
+_ENV/
+.env.me
 .env
-env/
-_arc/
-

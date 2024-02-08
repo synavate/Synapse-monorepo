@@ -1,23 +1,64 @@
-# Template 
-version: '3.10'
-services:
-  backend:
-    build: ./path/to/python/backend
-    ports:
-      - "8000:8000"
-    environment:
-      - NAME=World
-    volumes:
-      - ./path/to/python/backend:/app
-    command: python app.py
+version: '3.8'
 
-  frontend:
-    build: ./path/to/react/frontend
+services:
+  user-service:
+    build:
+      context: ./user-service
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+
+  data-service:
+    build:
+      context: ./data-service
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3000"
+    environment:
+      - NODE_ENV=production
+
+  auth-service:
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    ports:
+      - "3003:3000"
+    environment:
+      - NODE_ENV=production
+
+
+version: '3.8'
+
+services:
+  app:
+    build: ./frontend/UserDashboardUI/
     ports:
       - "3000:3000"
-    volumes:
-      - ./path/to/react/frontend:/app
-      - /app/node_modules
     environment:
-      - NODE_ENV=development
-    command: npm start
+      NODE_ENV: production
+    # Uncomment the below lines if your app connects to a database or other services
+    # depends_on:
+    #   - db
+
+  # Placeholder for a database service
+  # db:
+  #   image: postgres:13
+  #   environment:
+  #     POSTGRES_USER: user
+  #     POSTGRES_PASSWORD: password
+  #     POSTGRES_DB: mydatabase
+  #   volumes:
+  #     - db-data:/var/lib/postgresql/data
+
+  # Placeholder for another service
+  # service2:
+  #   image: another-service
+  #   depends_on:
+  #     - app
+  #     - db
+
+# Named volume for persisting database data
+# volumes:
+#   db-data:
