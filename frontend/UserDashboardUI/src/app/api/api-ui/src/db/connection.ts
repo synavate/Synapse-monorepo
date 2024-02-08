@@ -1,9 +1,7 @@
 // MongoDB Connection 
 import { connect, disconnect } from "mongoose";
 import { ENV_PATH } from "../utils/constants.js";
-import * as dotenv from "dotenv";
-
-
+import dotenv from "dotenv";
 dotenv.config({path: ENV_PATH});
 
 async function connectToDatabase() {
@@ -11,9 +9,7 @@ async function connectToDatabase() {
         await connect(process.env.MONGO_URI);
         console.log("Connected to MongoDB")
     } catch (error) {
-        console.log(error);
         throw new Error("Cannot connect to MongoDB");
-
     };
 };
 

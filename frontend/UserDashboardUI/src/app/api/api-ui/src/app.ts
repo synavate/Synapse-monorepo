@@ -12,7 +12,7 @@ const app = express();
 
 // Cross origin protection
 const corsOptions = {
-    origin: function (origin, callback) {
+    origin: function (origin: null, callback: any) {
       //Using CORS middlewarae to call API from origin localhost and PORT
 
       if (origin === 'http://localhost:5173') {

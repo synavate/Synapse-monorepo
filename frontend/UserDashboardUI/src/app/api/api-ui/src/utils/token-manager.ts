@@ -1,5 +1,9 @@
 //Authentication and Authorization
 import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+import { ENV_PATH } from "./constants";
+
+dotenv.config({path: ENV_PATH});
 
 
 export const createToken = (id: string, email:string, expiresIn:string) => {

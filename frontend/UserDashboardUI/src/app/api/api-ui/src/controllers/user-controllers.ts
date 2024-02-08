@@ -14,7 +14,6 @@ export const getAllUsers = async (req: Request,
          const users = await User.find(); 
          return res.status(200).json({message: "OK", users });    
     } catch (error) {
-     console.log(error);
      return res.status(500).json({message: "ERROR", cause:error.message});
     }
 }
@@ -61,7 +60,8 @@ export const userLogin = async (req: Request,
 
 export const userSignup = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
      try {
-     const signup_request = {req};
+     const signupRequest = req.body;
+     const {userName, email, passWord} = signupRequest;
          console.log("Beginning signup");
          const existingUser = await User.findOne({ email: email });
          console.log(existingUser);
@@ -98,6 +98,6 @@ export const userSignup = async (req: Request, res: Response, next: NextFunction
      return res.status(201).json({message: "OK", id: user._id.toString() })
      } catch (error) {
      console.log(error);
-     return res.status(500).json({message: "ERROR", cause: error.message});
+     return res.status(500).json({message: "ERROR", cause: error});
 }}
 
