@@ -1,16 +1,11 @@
 {
-  "name": "veridaconnect",
+  "name": "root",
   "private": true,
   "license": "ISC",
-  "engines": {
-            "node": "20.11.0"
-  },
   "dependencies": {
-    "@nestjs/microservices": "^10.3.1",
-    "@verida/account-web-vault": "^3.0.1",
-    "@verida/client-ts": "^3.0.2"
+    "@nestjs/microservices": "^10.3.1"
   },
-  "devDependencies": {    
+  "devDependencies": {
     "lerna": "^3.22.1",
     "typedoc": "^0.22.12",
     "typedoc-plugin-markdown": "^3.11.14",
@@ -25,4 +20,3 @@
     "packages/*"
   ]
 }
-

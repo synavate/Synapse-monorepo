@@ -15,7 +15,7 @@ const account = new VaultAccount({
     logoUrl: LOGO_URL,
     // An optional URL that will open a browser on the user's mobile device
     // after accepting the login request in the Verida Wallet mobile app
-    openURL: window.location.href, //TODO Set
+    openUrL: window.location.href, //TODO Set
   }
 });
 
