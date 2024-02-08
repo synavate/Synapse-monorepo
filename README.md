@@ -2,7 +2,7 @@
 
 Please visit the build folder for instructions on deploying the services into Dockerfiles
 
-[![Static Analysis Status Badge](https://github.com/synavate/Synapse-v0.0.2-POC/actions/workflows/trescommas-push.yml/badge.svg?branch=trescommas&event=status)]
+[![Static Analysis Status Badge](https://github.com/synavate/Synapse-monorepo/actions/workflows/deveop-push.yml/badge.svg?branch=develop&event=status)]
 
 # v0.02 Architecture Summary
 
