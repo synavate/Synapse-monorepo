@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: false
   },
-  name: {
+  userName: {
     type: String,
     required: true
   },
@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true // Ensures email addresses are unique across users
   },
-  password: {
+  passWord: {
     type: String,
     required: true
   },

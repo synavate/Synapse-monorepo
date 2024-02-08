@@ -8,11 +8,12 @@ dotenv.config({path: ENV_PATH});
 
 async function connectToDatabase() {
     try {
-        await connect(process.env.MONGODB_URI);
+        await connect(process.env.MONGO_URI);
         console.log("Connected to MongoDB")
     } catch (error) {
         console.log(error);
         throw new Error("Cannot connect to MongoDB");
+
     };
 };
 

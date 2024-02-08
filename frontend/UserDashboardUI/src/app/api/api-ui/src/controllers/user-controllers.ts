@@ -26,12 +26,12 @@ export const userLogin = async (req: Request,
      try {
      //user login
           console.log("Attempting login...");
-          const { email, password } = req.body;
+          const { userName, email, passWord } = req.body;
           const user = await User.findOne({ email });
           if (!user) {
                return res.status(500).send("User not registered");
           }
-          const isPasswordCorrect = await compare(password, user.password);
+          const isPasswordCorrect = await compare(passWord, user.passWord);
           if (!isPasswordCorrect) {
                return res.status(500).send("Invalid password");
           }
@@ -61,10 +61,8 @@ export const userLogin = async (req: Request,
 
 export const userSignup = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
      try {
-          signup_request = {username, email, password} = req.body;
+     const signup_request = {req};
          console.log("Beginning signup");
-        ({ username, email, password } = req.body);
- 
          const existingUser = await User.findOne({ email: email });
          console.log(existingUser);
  
@@ -72,7 +70,7 @@ export const userSignup = async (req: Request, res: Response, next: NextFunction
              return res.status(409).send("User already exists");
          }
  
-         const hashedPassword = await hash(password, 10);
+         const hashedPassword = await hash(passWord, 10);
  
          const user = new User({
              name: name,
