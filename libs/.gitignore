@@ -1,0 +1,5 @@
+node_modules/
+_ENV
+*.env
+*.env.me
+.env
