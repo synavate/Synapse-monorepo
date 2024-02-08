@@ -1,0 +1,19 @@
+{
+    "name": "Python Development Container",
+    "dockerFile": "../Dockerfile",
+    "context": "..",
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "python.linting.enabled": true,
+      "python.linting.pylintEnabled": true,
+      "python.formatting.autopep8Path": true
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "himanoa.python-autopep8"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "python"
+  }
+  

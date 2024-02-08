@@ -10,12 +10,16 @@ import cors from "cors";
 dotenv.config({path: ENV_PATH});
 const app = express();
 
+const environment = process.env.ENVIRONMENT || 'development';
+const serviceUrl = environment === 'production' ? process.env.PRODUCTION_SERVICE_URL : process.env.DEVELOPMENT_SERVICE_URL;
+console.log(`Service URL for ${environment} environment is set to ${serviceUrl}`);
+
 // Cross origin protection
 const corsOptions = {
     origin: function (origin: null, callback: any) {
       //Using CORS middlewarae to call API from origin localhost and PORT
 
-      if (origin === 'http://localhost:5173') {
+      if (origin === process.env.PRODUCTION_SERVICE_URL || origin === process.env.DEVELOPMENT_SERVICE_URL) {
         callback(null, true);
       } else {
         callback(new Error('Not allowed by CORS'));
@@ -25,7 +29,7 @@ const corsOptions = {
   };
 
 //middleware
-app.use(cors());  
+app.use(cors(corsOptions));  
 app.use(express.json());
   
 

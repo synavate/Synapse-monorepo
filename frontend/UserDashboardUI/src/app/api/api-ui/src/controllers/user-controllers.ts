@@ -60,8 +60,8 @@ export const userLogin = async (req: Request,
 
 export const userSignup = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
      try {
-     const signupRequest = req.body;
-     const {userName, email, passWord} = signupRequest;
+     const signupBody = req.body;
+     const {userName, email, passWord} = signupBody;
          console.log("Beginning signup");
          const existingUser = await User.findOne({ email: email });
          console.log(existingUser);
@@ -69,7 +69,8 @@ export const userSignup = async (req: Request, res: Response, next: NextFunction
          if (existingUser) {
              return res.status(409).send("User already exists");
          }
- 
+         
+         // Pas the hash
          const hashedPassword = await hash(passWord, 10);
  
          const user = new User({

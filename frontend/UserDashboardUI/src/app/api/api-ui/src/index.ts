@@ -1,5 +1,5 @@
 import express from 'express'; // Make sure to install express
-import * as dotenv from 'dotenv';
+import dotenv from 'dotenv';
 import { connectToDatabase } from './db/connection.js';
 import { userSignup } from './controllers/user-controllers.js';
 import { getUserData } from './utils/api-logic.js'; // Assuming getUserData is properly exported
