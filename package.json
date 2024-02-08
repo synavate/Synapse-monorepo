@@ -1,1 +1,14 @@
-{}
+{
+  "name": "synapse-monorepo",
+  "version": "0.0.3",
+  "description": "Synapse symmetrical intelligence",
+  "main": "index.js",
+  "devDependencies": {"jest": "^29.5.0", "ts-jest": "^29.1.0", "typescript": "^5.0.4"},
+  "scripts": {
+    "test": "jest",
+    "dev": "tsc && npm run dev",
+    "build": "tsc && npm run build"
+  },
+  "author": "snyata <core@synavate.tech>",
+  "license": "Apache-2.0"
+}
