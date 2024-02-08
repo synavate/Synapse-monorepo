@@ -1,0 +1,29 @@
+{ 
+    "srcFolders": ["./"],
+    "rules": [
+        {
+            "match": [".*\\.xml"],
+            "skipIfContains": "license-start",
+            "comments": {
+                "start": "<!--",{ 
+                    "srcFolders": ["./"],
+                    "rules": [
+                        {
+                            "match": [".*\\.xml"],
+                            "skipIfContains": "license-start",
+                            "comments": {
+                                "start": "<!--",
+                                "line": "   ~ ",
+                                "end": "-->"
+                            },
+                            "content": "../FILEHEADER.txt"
+                        }
+                    ]
+                }
+                "line": "   ~ ",
+                "end": "-->"
+            },
+            "content": "FILEHEADER.txt"
+        }
+    ]
+}
