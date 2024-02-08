@@ -1,5 +1,5 @@
 _ENV
-.env
+*.env
 .env.me
 node_modules/
 venv/
