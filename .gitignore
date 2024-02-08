@@ -1,9 +1,0 @@
-_ENV
-*.env
-.env.me
-node_modules/
-venv/
-__pycache__/
-*.env
-
-
