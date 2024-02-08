@@ -9,10 +9,12 @@
       "python.formatting.autopep8Path": true
     },
     "extensions": [
+      "kevinrose.vsc-python-indent",
+      "mhutchie.git-graph",
+      "ms-python.debugpy",
+      "ms-python.pylint",
       "ms-python.python",
       "ms-python.vscode-pylance",
-      "himanoa.python-autopep8",
-      
     ],
     "postCreateCommand": "pip install -r requirements.txt",
     "remoteUser": "python"
