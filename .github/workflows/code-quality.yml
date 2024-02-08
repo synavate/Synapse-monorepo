@@ -28,7 +28,7 @@ jobs:
           pip install pylint
 
       - name: Lint with pylint
-        run: pylint path/to/your/python/code/
+        run: pylint ../backend/ ../libs/shared/DataPipelineService ../libs/shared/OpticNerveObservability
 
   typescript-lint:
     runs-on: ubuntu-latest
@@ -46,17 +46,21 @@ jobs:
           npm install
 
       - name: Lint with ESLint
-        run: npx eslint "path/to/your/typescript/code/**/*.ts"
+        run: npx eslint "../frontend/**/*.ts ../backend/**/*.ts ../libs/shared/**/*.ts"
 
-  datadog-code-quality-check:
+  check-quality:
     runs-on: ubuntu-latest
     needs: [python-lint, typescript-lint]
     steps:
       - uses: actions/checkout@v2
 
-      - name: Datadog Code Quality Check
-        env:
-          DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
-        run: |
-          npm install -g @datadog/datadog-ci
-          datadog-ci codequality upload --service my-service-name --sourcecode "path/to/your/code"
+      - name: Datadog Static Analyzer
+        uses: DataDog/datadog-static-analyzer-github-action@v1
+        with:
+          dd_app_key: ${{ secrets.DD_APP_KEY }}
+          dd_api_key: ${{ secrets.DD_API_KEY }}
+          dd_service: "my-service"
+          dd_env: "ci"
+          cpu_count: 2
+          enable_performance_statistics: false
+

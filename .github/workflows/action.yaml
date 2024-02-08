@@ -1,5 +1,5 @@
 { 
-    "srcFolders": ["./"],
+    "srcFolders": ["../"],
     "rules": [
         {
             "match": [".*\\.xml"],
@@ -20,7 +20,7 @@
                         }
                     ]
                 }
-                "line": "   ~ ",
+                ,"line": "   ~ ",
                 "end": "-->"
             },
             "content": "FILEHEADER.txt"
