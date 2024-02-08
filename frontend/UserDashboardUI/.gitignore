@@ -1,0 +1,4 @@
+node_modules/
+_ENV/
+.env.me
+.env
