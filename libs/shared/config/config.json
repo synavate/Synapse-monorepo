@@ -1,0 +1,8 @@
+{
+    "synapse": {
+      "version": "0.0.3",
+      "environment": "development",
+      "apiVersion": "v1"
+    }
+  }
+  

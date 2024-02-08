@@ -1,0 +1,8 @@
+//DRAFT - NEED TO EVOLVE
+{
+    "name": "Python Container",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "service": "llm-processing-service",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/python-src"
+  }
