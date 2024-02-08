@@ -1,1 +1,0 @@
-/Users/nullzero/Documents/repos/gitlab.com/synavate/products/Synapse/releases/v0.0.2/libs/shared/src/reqwest_api/target/debug/reqwest_client: /Users/nullzero/Documents/repos/gitlab.com/synavate/products/Synapse/releases/v0.0.2/libs/shared/src/reqwest_api/reqwest_client/src/main.rs
