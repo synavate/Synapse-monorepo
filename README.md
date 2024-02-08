@@ -1,4 +1,4 @@
-# Synapse v0.0.2 ~ 31/01/2024
+# Synapse v0.0.3 ~ 08/02/2024 - Service Refactor
 
 Please visit the build folder for instructions on deploying the services into Dockerfiles
 
