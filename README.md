@@ -1,12 +1,15 @@
 # Synapse v0.0.3 ~ 08/02/2024 - Service Refactor
+#### Project is in Early Development #### 
+#### Interested collaborators core@synavate.tech ####
+
 
 Please visit the build folder for instructions on deploying the services into Dockerfiles
 
-[![Static Analysis Status Badge](https://github.com/synavate/Synapse-monorepo/actions/workflows/deveop-push.yml/badge.svg?branch=develop&event=status)]
+[![Static Analysis Status Badge](https://github.com/synavate/Synapse-monorepo/actions/workflows/code-quality.yml/badge.svg?branch=develop&event=status)]
 
 # v0.02 Architecture Summary
 
-### CORE OPERATIONS: Kong and Extensions
+### CORE OPERATIONS: Gateway and Extensions
 
 - **APIGatewayService**: Entry point for the application, routing requests to other services using NesJS Microservice API Gateway pending Kong, and Kubernetes for scaling.
 
