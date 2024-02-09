@@ -79,4 +79,4 @@ Goal: A minimal execution demonstrating the vision of Synapse as our initial pro
 Details as the project evolves closer to it's goal.
 
 ----------------------
-**core@synapse.tech or ask to join our Slack.**
+**core@synavate.tech or ask to join our Slack.**
