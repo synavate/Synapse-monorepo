@@ -148,6 +148,8 @@
 
     "remark-math": "^5.1.1",
 
+    "require-hook": "^0.1.2",
+
     "uuid": "^9.0.1"
 
   },

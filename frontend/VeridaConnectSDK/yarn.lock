@@ -2006,6 +2006,15 @@
     axios "^0.27.2"
     ethers "^5.7.0"
 
+"@verida/web-helpers@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@verida/web-helpers/-/web-helpers-3.1.2.tgz#34d649150f83774946658be46110c2947389e85e"
+  integrity sha512-ALoxkykBVkIevRjyKQ3uxJ0SdFXxBF64U3W7XE3nvu+QBsxPOv3yVwsalznaiXLD86O+vK3LsZdH9BCiJSM68A==
+  dependencies:
+    "@verida/account-web-vault" "^3.0.1"
+    "@verida/client-ts" "^3.0.2"
+    "@verida/types" "^3.0.0"
+
 "@verida/web3@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@verida/web3/-/web3-3.0.1.tgz#92a776f3b1872099039fe79e0017caa334acbfe6"

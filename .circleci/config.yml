@@ -3,6 +3,25 @@
 version: 2.1
 orbs:
   python: circleci/python@2
+  node: circleci/node@5.1
+  jira: circleci/jira@2.1.0
+build:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages
+      - run:
+          command:dev: npm test && tsc && npm run dev
+          command:prod: npm test && npm run build
+          name: Test app
+      - jira/notify:
+          pipeline_id: << pipeline.id >>
+          pipeline_number: << pipeline.number >>
+workflows:
+  build-workflow:
+    jobs:
+      - build:
+          context: JIRA_WEBHOOK
 jobs:
   test-python:
     # Install dependencies and run tests

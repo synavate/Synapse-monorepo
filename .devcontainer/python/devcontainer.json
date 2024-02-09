@@ -17,6 +17,6 @@
       "ms-python.vscode-pylance",
     ],
     "postCreateCommand": "pip install -r requirements.txt",
-    "remoteUser": "python"
+    "remoteUser": "synavate-core"
   }
   
