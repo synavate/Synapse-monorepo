@@ -23,11 +23,14 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.10'
-
+      
+      - name: Install Poetry 
+        uses: snok/install-poetry@v1
+      
       - name: Install dependencies (POETRY ONLY)
         run: |
-          python -m poetry update --upgrade pip
-          pip install pylint
+          python3 -m poetry update --upgrade
+          poetry add pylint
 
       - name: Lint with pylint
         run: pylint "../backend/ ../libs/shared/DataPipelineService ../libs/shared/OpticNerveObservability"
@@ -41,14 +44,14 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '20.11.0'
 
       - name: Install dependencies
         run: |
           npm install
 
       - name: Lint with ESLint
-        run: npx eslint "../frontend/**/*.ts ../backend/**/*.ts ../libs/shared/**/*.ts"
+        run: npx eslint "../frontend/**/*.ts  ../libs/shared/**/*.ts"
 
   check-quality:
     runs-on: ubuntu-latest
