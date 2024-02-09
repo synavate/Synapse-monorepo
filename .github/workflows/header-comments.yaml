@@ -1,0 +1,47 @@
+name: Header Comments CI
+run-name: ${{ github.actor }} is adding headers 📝 to src folders in ${{ inputs.deploy_target }}
+on:
+  push:
+    paths:
+        - '**.ts'
+        - '**.py'
+        - '**.tsx'
+    paths-ignore:
+        - '__pycache__/**'
+        - 'node_modules/**'
+        - 'config/**'
+        - '.config/**'
+        - '.github/**'
+        - '.circleci/**'
+        - '.gitlab/**'
+        - '.internal/**'
+        - '.docs/**'
+        - '.draft/**'
+        - '.devcontainer/**'
+        - 'build/**'
+        - 'docs/**'
+        - '.github/**'
+        - '.circleci/**'
+        - '.draft/**'
+        - '_ENV/'
+        - '*.env'
+        - '*.vault'
+        - '.gitignore'
+        - '**.js'
+    branches:
+      - main
+jobs:
+  test:
+    name: Add comments
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+        with:
+          repository: 'synavate/monorepo'
+      - name: Add comments to files
+        uses: koj-co/header-comments@v1.0.5
+      - name: Create PR with changes
+        uses: peter-evans/create-pull-request@v3
+
+        #FUTURE - ADD STARS? DEPLOYMENT? LATEST RELEASE??? We can add to this action.
