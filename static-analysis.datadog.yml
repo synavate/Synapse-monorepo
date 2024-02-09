@@ -1,4 +1,8 @@
 rulesets:
+  - typescript-best-practices
+  - typescript-code-style
+  - typescript-express
+  - typescript-node-security
   - python-code-style
   - python-best-practices
   - python-inclusive
