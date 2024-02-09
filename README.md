@@ -13,12 +13,14 @@
 #### Project is in Early Development #### 
 #### Interested collaborators core@synavate.tech ####
 
+## ***Annnouncement: Synavate has been accepted into Google's AI Startup Program*** 
+
 
 Please visit the build folder for instructions on deploying the services into Dockerfiles
 
 ![Static Analysis Status Badge](https://github.com/synavate/Synapse-monorepo/actions/workflows/code-quality.yml/badge.svg?branch=develop&event=status)
 
-# v0.02 Architecture Summary
+# Architecture Summary -- ALWAYS A DRAFT... until its not... 
 
 ### CORE OPERATIONS: Gateway and Extensions
 
