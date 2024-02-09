@@ -1,4 +1,5 @@
 # Synapse v0.0.3 ~ 08/02/2024 - Service Refactor 🫶
+```markdown
 ***************************
   Synavate Tech: Synapse
   ___________  ___________
@@ -8,7 +9,7 @@
      APACHE-LICENSE 2.0
      github.com/synavate
 ***************************
-
+```
 #### Project is in Early Development #### 
 #### Interested collaborators core@synavate.tech ####
 
