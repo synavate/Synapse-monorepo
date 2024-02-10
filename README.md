@@ -2,7 +2,16 @@
 
 Please visit the build folder for instructions on deploying the services into Dockerfiles
 
-[![Static Analysis Status Badge](https://github.com/synavate/Synapse-monorepo/actions/workflows/deveop-push.yml/badge.svg?branch=develop&event=status)]
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/synavate/synapse-monorepo/CI/main?style=flat-square&logo=github)
+![GitHub Release](https://img.shields.io/github/v/release/synavate/synapse-monorepo?style=flat-square&logo=github)
+![License](https://img.shields.io/github/license/synavate/synapse-monorepo?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.8-blue?style=flat-square&logo=python)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.8-blue?style=flat-square&logo=pytorch)
+![MLFlow](https://img.shields.io/badge/MLFlow-1.14-blue?style=flat-square&logo=apache)
+![Docker](https://img.shields.io/docker/pulls/synavate/synapse?style=flat-square&logo=docker)
+![Code Quality](https://img.shields.io/codacy/grade/a1234567890b1234567890c123456789?style=flat-square&logo=codacy)
+![Next.js](https://img.shields.io/badge/Next.js-10.0-black?style=flat-square&logo=next.js)
+![D3.js](https://img.shields.io/badge/D3.js-6.6-yellow?style=flat-square&logo=d3.js)
 
 # v0.03 Architecture Summary
 
