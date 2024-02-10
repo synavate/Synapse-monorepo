@@ -1,12 +1,28 @@
-# Synapse v0.0.3 ~ 08/02/2024 - Service Refactor
+# Synapse v0.0.3 ~ 08/02/2024 - Service Refactor 🫶
+```markdown
+***************************
+  Synavate Tech: Synapse
+  ___________  ___________
+ /           \/           \
+|  [v0.0.2] --> [v0.0.3]  |
+ \___________/\___________/
+     APACHE-LICENSE 2.0
+     github.com/synavate
+***************************
+```
+#### Project is in Early Development #### 
+#### Interested collaborators core@synavate.tech ####
+
+## ***Annnouncement: Synavate has been accepted into Google's AI Startup Program*** 
+
 
 Please visit the build folder for instructions on deploying the services into Dockerfiles
 
-[![Static Analysis Status Badge](https://github.com/synavate/Synapse-monorepo/actions/workflows/deveop-push.yml/badge.svg?branch=develop&event=status)]
+![Static Analysis Status Badge](https://github.com/synavate/Synapse-monorepo/actions/workflows/code-quality.yml/badge.svg?branch=develop&event=status)
 
-# v0.02 Architecture Summary
+# Architecture Summary -- ALWAYS A DRAFT... until its not... 
 
-### CORE OPERATIONS: Kong and Extensions
+### CORE OPERATIONS: Gateway and Extensions
 
 - **APIGatewayService**: Entry point for the application, routing requests to other services using NesJS Microservice API Gateway pending Kong, and Kubernetes for scaling.
 
@@ -65,4 +81,4 @@ Goal: A minimal execution demonstrating the vision of Synapse as our initial pro
 Details as the project evolves closer to it's goal.
 
 ----------------------
-**core@synapse.tech or ask to join our Slack.**
+**core@synavate.tech or ask to join our Slack.**
