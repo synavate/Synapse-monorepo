@@ -2,11 +2,13 @@ name: Header Comments CI
 run-name: ${{ github.actor }} is adding headers to src folders in ${{ inputs.deploy_target }}
 on:
   push:
-    paths:
-        - '**.ts'
-        - '**.py'
-        - '**.tsx'
     paths-ignore:
+        - '**.yaml'
+        - '**.yml'
+        - '**.sh'
+        - '**.json'
+        - '**.cfg'
+        - '**.md'
         - '__pycache__/**'
         - 'node_modules/**'
         - 'config/**'
@@ -20,12 +22,13 @@ on:
         - '.devcontainer/**'
         - 'build/**'
         - 'docs/**'
+        - '.docs/**'
         - '.github/**'
         - '.circleci/**'
         - '.draft/**'
         - '_ENV/'
-        - '*.env'
-        - '*.vault'
+        - '**.env'
+        - '**.vault'
         - '.gitignore'
         - '**.js'
     branches:

@@ -11,28 +11,6 @@ on:
       - '**.ts'
       - '**.py'
       - '**.tsx'
-    paths-ignore:
-      - '__pycache__/**'
-      - 'node_modules/**'
-      - 'config/**'
-      - '.config/**'
-      - '.github/**'
-      - '.circleci/**'
-      - '.gitlab/**'
-      - '.internal/**'
-      - '.docs/**'
-      - '.draft/**'
-      - '.devcontainer/**'
-      - 'build/**'
-      - 'docs/**'
-      - '.github/**'
-      - '.circleci/**'
-      - '.draft/**'
-      - '_ENV/'
-      - '*.env'
-      - '*.vault'
-      - '.gitignore'
-      - '**.js'
 jobs:
   setup:
     runs-on: ubuntu-latest
