@@ -38,18 +38,15 @@ jobs:
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root
       
-      - name: Install project
-        run: poetry install --no-root
-      
-      - name: Install dependencies (POETRY ONLY)
+      - name: Install pip dependencies
         run: |
-          poetry shell
-          poetry install
-          poetry update --upgrade
-          poetry add pylint
+          poetry export -f requirements.txt --output requirements.txt
+          pip install -r requirements.txt
+          pip --upgrade pip
+          pip install pylint
 
       - name: Lint with pylint
-        run: pylint ../backend/ ../libs/shared/DataPipelineService ../libs/shared/OpticNerveObservability ../libs/shared/src/SynAPIGate
+        run: pylint ../backend/**/*.py ../shared/DataPipelineService/**/*.py ../shared/OpticNerveObservability/**/*.py 
 
   typescript-lint:
     runs-on: ubuntu-latest
@@ -72,8 +69,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 20.11.0
-    - name: yarn install
-      run: yarn install
+    - name: npm install
+      run: npm install
     
     - name: tsc
       uses: icrawl/action-tsc@v1
