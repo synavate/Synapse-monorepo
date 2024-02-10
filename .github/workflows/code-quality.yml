@@ -7,21 +7,33 @@ on:
   push:
     branches:
       - develop
+    paths:  
+      - '**.ts'
+      - '**.py'
+      - '**.tsx'
+    paths-ignore:
+      - '__pycache__/**'
+      - 'node_modules/**'
+      - 'config/**'
+      - '.config/**'
+      - '.github/**'
+      - '.circleci/**'
+      - '.gitlab/**'
+      - '.internal/**'
+      - '.docs/**'
+      - '.draft/**'
+      - '.devcontainer/**'
+      - 'build/**'
+      - 'docs/**'
+      - '.github/**'
+      - '.circleci/**'
+      - '.draft/**'
+      - '_ENV/'
+      - '*.env'
+      - '*.vault'
+      - '.gitignore'
+      - '**.js'
 jobs:
-  #Compiles ts into js
-  tsc:
-    name: tsc
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: install node v12
-      uses: actions/setup-node@v1
-      with:
-        node-version: 20.11.0
-    - name: yarn install
-      run: yarn install
-    - name: tsc
-      uses: icrawl/action-tsc@v1
   setup:
     runs-on: ubuntu-latest
     steps:
@@ -72,12 +84,27 @@ jobs:
         with:
           node-version: '20.11.0'
           cache: 'npm'
+      #Compiles ts into js
+  tsc:
+    name: tsc
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: install node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 20.11.0
+    - name: yarn install
+      run: yarn install
+    
+    - name: tsc
+      uses: icrawl/action-tsc@v1
 
-      - name: Install dependencies
-        run: npm ci
+    - name: Install dependencies
+      run: npm ci
 
-      - name: Lint with ESLint
-        run: npx eslint ../frontend/**/*.ts" ../backend/**/*.ts libs/shared/**/*.ts
+    - name: Lint with ESLint
+      run: npx eslint ../frontend/**/*.ts" ../backend/**/*.ts libs/shared/**/*.ts
 
   check-quality:
     needs: [python-lint, typescript-lint]
