@@ -37,7 +37,7 @@ jobs:
           poetry add pylint
 
       - name: Lint with pylint
-        run: pylint ../backend/ ../libs/shared/DataPipelineService ../libs/shared/OpticNerveObservability
+        run: pylint ../backend/ ../libs/shared/DataPipelineService ../libs/shared/OpticNerveObservability ../libs/shared/src/SynAPIGate
 
   typescript-lint:
     runs-on: ubuntu-latest
@@ -55,7 +55,7 @@ jobs:
         run: npm ci
 
       - name: Lint with ESLint
-        run: npx eslint "frontend/**/*.ts" "backend/**/*.ts" "libs/shared/**/*.ts"
+        run: npx eslint ../frontend/**/*.ts" ../backend/**/*.ts libs/shared/**/*.ts
 
   check-quality:
     needs: [python-lint, typescript-lint]
