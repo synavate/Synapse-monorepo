@@ -1,5 +1,5 @@
-from src.examples.examples_service import ExamplesService
-from src.examples.examples_controller import ExamplesController
+from api.examples.examples_service import ExamplesService
+from api.examples.examples_controller import ExamplesController
 
 
 class ExamplesModule:

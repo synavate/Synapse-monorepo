@@ -1,6 +1,6 @@
 //DRAFT - NEED TO EVOLVE
 {
-    "name": "Python Container",
+    "name": "LLM Processing",
     "dockerComposeFile": ["../../docker-compose.yml"],
     "service": "llm-processing-service",
     "shutdownAction": "none",

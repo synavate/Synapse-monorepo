@@ -1,5 +1,5 @@
 from nest.core.database.base_odm import OdmService
-from src.examples.examples_entity import Examples
+from api.examples.examples_entity import Examples
 import os
 from dotenv import load_dotenv
 
