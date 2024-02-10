@@ -4,9 +4,9 @@ Please visit the build folder for instructions on deploying the services into Do
 
 [![Static Analysis Status Badge](https://github.com/synavate/Synapse-monorepo/actions/workflows/deveop-push.yml/badge.svg?branch=develop&event=status)]
 
-# v0.02 Architecture Summary
+# v0.03 Architecture Summary
 
-### CORE OPERATIONS: Kong and Extensions
+### CORE OPERATIONS:
 
 - **APIGatewayService**: Entry point for the application, routing requests to other services using NesJS Microservice API Gateway pending Kong, and Kubernetes for scaling.
 
@@ -20,6 +20,10 @@ Please visit the build folder for instructions on deploying the services into Do
 
 ### Backend DB and Caching
 - **Databases**: MongoDB (Testing), REDIS, QDrant, Memgraph, Neo4J (TBD).
+<<<<<<< HEAD
+=======
+- ** Cloudflare AI Gateway forked from Portkey**
+>>>>>>> 8e7d99e70361720c590428a6df3b414d0e832d1d
 
 ### Frontend UserUI & Data Viz
 - **User Account & Security**: Investigating Verida, Spruce; secure data storage.
