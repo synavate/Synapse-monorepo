@@ -1,5 +1,5 @@
 name: Header Comments CI
-run-name: ${{ github.actor }} is adding headers 📝 to src folders in ${{ inputs.deploy_target }}
+run-name: ${{ github.actor }} is adding headers to src folders in ${{ inputs.deploy_target }}
 on:
   push:
     paths:
