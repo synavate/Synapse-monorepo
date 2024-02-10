@@ -8,6 +8,20 @@ on:
     branches:
       - develop
 jobs:
+  #Compiles ts into js
+  tsc:
+    name: tsc
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: install node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 20.11.0
+    - name: yarn install
+      run: yarn install
+    - name: tsc
+      uses: icrawl/action-tsc@v1
   setup:
     runs-on: ubuntu-latest
     steps:
@@ -30,8 +44,16 @@ jobs:
       - name: Add Poetry to PATH
         run: echo "$HOME/.local/bin" >> $GITHUB_PATH
       
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+      
+      - name: Install project
+        run: poetry install --no-root
+      
       - name: Install dependencies (POETRY ONLY)
         run: |
+          poetry shell
           poetry install
           poetry update --upgrade
           poetry add pylint
