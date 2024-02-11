@@ -1,0 +1,24 @@
+{
+  "name": "syn-apigate",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/syn-apigate/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "syn-apigate:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "syn-apigate:build:development"
+        },
+        "production": {
+          "buildTarget": "syn-apigate:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
