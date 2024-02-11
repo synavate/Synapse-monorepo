@@ -1,3 +1,9 @@
+node_modules/
+.env
+_ENV
+.toml
+docs
+
 # Logs
 logs
 *.log

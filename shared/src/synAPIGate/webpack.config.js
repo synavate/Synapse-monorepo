@@ -1,8 +1,8 @@
+/ Using ES module import syntax
+import { NxWebpackPlugin } from '@nx/webpack';
+import { join } from 'path';
 
-const { NxWebpackPlugin } = require('@nx/webpack');
-const { join } = require('path');
-
-module.exports = {
+export default {
   output: {
     path: join(__dirname, '../../dist/apps/syn-apigate'),
   },
@@ -12,7 +12,7 @@ module.exports = {
       compiler: 'tsc',
       main: './src/main.ts',
       tsConfig: './tsconfig.app.json',
-      assets: ["./src/assets"],
+      assets: ['./src/assets'],
       optimization: false,
       outputHashing: 'none',
     })

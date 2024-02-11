@@ -20,6 +20,7 @@ import { embeddingsHandler } from "./handlers/embeddingsHandler";
 import { requestValidator } from "./middlewares/requestValidator";
 import { compress } from "hono/compress";
 import { getRuntimeKey } from "hono/adapter";
+import { handleSlackEvent } from "../../MassiveSlacker/client/slack-workers"; 
 
 // Create a new Hono server instance
 const app = new Hono();
@@ -71,6 +72,9 @@ app.onError((err, c) => {
  * Handles requests by passing them to the completeHandler.
  */
 app.post("/v1/complete", completeHandler);
+
+// Add Slack event handler route
+app.post("/slack-events", handleSlackEvent);
 
 /**
  * POST route for '/v1/chatComplete'.

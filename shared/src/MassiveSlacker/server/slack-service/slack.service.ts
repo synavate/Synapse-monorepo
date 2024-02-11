@@ -1,9 +1,7 @@
-// slack.service.ts
-// slack.service.ts
 import { Injectable } from '@nestjs/common';
-import { App, message } from '@slack/bolt';
+import { App } from '@slack/bolt';
 import { WebClient } from '@slack/web-api';
-import { SlackEvents } from './slack-events-service';
+import { SlackEvents } from 'slack-events.service'; // Assuming you have a SlackEvents service
 
 @Injectable()
 export class SlackService {
@@ -20,7 +18,8 @@ export class SlackService {
   }
 
   private async setupEventListeners() {
-    const events = new SlackEvents();
+    const events = new SlackEvents(); // Assuming you have a setupEventListeners method in SlackEvents service
+    // Add event listeners here
   }
 
   async sendMessage(channel: string, text: string) {

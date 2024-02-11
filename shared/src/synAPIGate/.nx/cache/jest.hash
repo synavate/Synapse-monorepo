@@ -1,0 +1,44 @@
+{
+  "1800026974626399261": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "apps/syn-apigate"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/syn-apigate"
+      ]
+    }
+  },
+  "10068452645051246344": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "apps/syn-apigate-e2e"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/coverage/syn-apigate-e2e"
+      ]
+    }
+  }
+}

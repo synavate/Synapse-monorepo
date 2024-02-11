@@ -1,4 +1,5 @@
 // Import necessary modules
+import { HandlerContext } from 'hono';
 import { verifyRequestSignature } from '@slack/events-api';
 import { WebClient } from '@slack/web-api';
 
@@ -7,7 +8,7 @@ const slackSigningSecret = '<YOUR_SLACK_SIGNING_SECRET>';
 const slackClient = new WebClient('<YOUR_SLACK_TOKEN>'); // Your Slack Bot token
 
 // Define the Slack event handler function
-async function handleSlackEvent(request) {
+export async function handleSlackEvent(request) {
     try {
         const verified = await verifyRequestSignature({
             signingSecret: slackSigningSecret,
@@ -57,7 +58,7 @@ addEventListener('fetch', event => {
 });
 
 // Integration into Portkey's AI Gateway
-// Placeholder for code integration with Portkey's AI Gateway
+
 
 // Integration with Google Cloud
 // Placeholder for code integration with Google Cloud services
