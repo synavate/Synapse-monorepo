@@ -1,6 +1,9 @@
 /* eslint-disable */
-export default {
-  displayName: 'syn-apigate',
+import { getJestProjects } from '@nx/jest';
+
+export {
+  projects: getJestProjects(),
+  displayName: 'synAPIGate',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
@@ -8,4 +11,10 @@ export default {
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
   coverageDirectory: '../../coverage/apps/syn-apigate'
+};
+
+
+
+export default {
+
 };
