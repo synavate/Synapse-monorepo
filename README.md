@@ -29,8 +29,6 @@ Please visit the build folder for instructions on deploying the services into Do
 
 ### Backend DB and Caching
 - **Databases**: MongoDB (Testing), REDIS, QDrant, Memgraph, Neo4J (TBD).
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 - ** Cloudflare AI Gateway forked from Portkey**
 
