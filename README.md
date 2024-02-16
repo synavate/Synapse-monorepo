@@ -6,11 +6,10 @@ Please visit the build folder for instructions on deploying the services into Do
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square&logo=python)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.8-blue?style=flat-square&logo=pytorch)
 ![MLFlow](https://img.shields.io/badge/MLFlow-1.14-blue?style=flat-square&logo=apache)
-![Docker](https://img.shields.io/docker/pulls/synavate/synapse?style=flat-square&logo=docker
 ![Next.js](https://img.shields.io/badge/Next.js-10.0-black?style=flat-square&logo=next.js)
 ![D3.js](https://img.shields.io/badge/D3.js-6.6-yellow?style=flat-square&logo=d3.js)*/
 
-# v0.03 Architecture Summary
+# v0.03 Architecture Summary - 09/02/2024
 
 ### CORE OPERATIONS:
 
